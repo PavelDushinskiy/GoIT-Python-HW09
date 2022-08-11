@@ -76,9 +76,9 @@ def main():
             exec_hello()
         elif command.lower()[:3] == "add":
             exec_add(command)
-        elif command.split(" ")[0].lower() == "change":
+        elif command.lower()[:6] == "change":
             exec_change(command)
-        elif command.split(" ")[0].lower() == "phone":
+        elif command.lower()[:5] == "phone":
             exec_phone(command)
         elif command.lower() == "show all":
             exec_show_all()
